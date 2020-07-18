@@ -1,0 +1,96 @@
+<html>
+<!-- 
+  File:   index.html (Experiments)
+  Author: Clare Bates Congdon 
+  Date:   Fri Aug 20 12:42:53 1999
+  Description: Experiments with CSS, JavaScript, DHTML, etc.
+  -->
+<head>
+<title>Experiments with the Web</title>
+
+<style> type="text/css">
+<! --- protect from older browsers
+  h1, h2, h3, h4, h5, h6 {color:blue}
+--->
+</style>
+
+<script language = "JavaScript">
+<!-------------------------------------------------------------------------
+// start JavaScript section
+
+//////////////////////////////////////////////////////////
+// function:   driveIt
+// parameters: none
+// return val: none
+// description: move the icon across the screen
+  
+function driveIt () {
+  var i, j;        // loop counters
+  var x, y;        // remember the initial position
+  var increment;   // increment to update by
+  var max;         // max pixel width to travel to
+
+  x = document.loader.x;
+  y = document.loader.y;
+  increment=2;
+  max = document.width / increment ; // max needed to move image offscreen
+
+  // loop till image is offscreen
+  for (i=0; i<max; i++) {
+    document.loader.moveBy(increment,0);
+
+    for (j=0; j<10000; j++);         // empty loop = pause
+  }
+
+  // reset location to the far left, plus enough to take the whole image
+  // offscreen 
+  document.loader.moveTo(0-document.loader.clip.width, y);
+
+  // reset the max to the right edge (not offscreen)
+  max = (document.width / increment) - 10;
+
+  // loop till image is at the right edge
+  for (i=0; i<max; i++) {
+    document.loader.moveBy(increment,0);
+
+    for (j=0; j<10000; j++);         // empty loop = pause
+  }
+
+} // end driveIt
+
+
+// end JavaScript section
+//------------------------------------------------------------------------->
+</script>
+</head>
+
+<body onload="driveIt()" onresize="driveIt()" 
+      bgcolor="#004040" text="#FFFFAO" vlink="#A0FFAO" alink="#FFFF9O">
+
+<hr>
+<H2>Pictures from the Evankow Family</H2>
+
+<h4><a href="Howse">Pictures of the new how-se</a>, 8/9/99</h4>
+
+<h4><a href="Howse2">Pictures of the new how-se</a>, 8/16/99</h4>
+
+<div id="loader" style="position:relative; left:0; top:0">
+ <small><i>Follow the Evankow Family as they build their house...</small></i>
+ <a href="Howse"><img src = "28e.jpg"></a>
+</div>
+<br clear=all>
+
+
+<hr>
+<h4>Pictures of Annie and Ethan, Early '99</h4>
+
+<img src="1b.jpg">
+<p>
+<img src="hillman.jpg">
+<p>
+<img src="00000008.jpg">
+
+
+<hr>
+</body>
+</html>

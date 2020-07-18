@@ -1,0 +1,43 @@
+<html>
+<!-- 
+  File:   index.html (Evankow)
+  Author: Clare Bates Congdon 
+  Date:   Tue Aug 17 15:48:33 1999
+  Description: Homepage for Evankows
+  -->
+<head>
+<title>The Evankow Family of Gorham, NH</title>
+
+</head>
+
+<body bgcolor="#004040" text="#FFFFAO" vlink="#A0FFAO" alink="#FFFF9O">
+
+<hr>
+<H2>Pictures from the Evankow Family</H2>
+
+<h4><a href="Howse">Pictures of the new how-se</a>, 8/9/99</h4>
+
+<h4><a href="Howse2">Pictures of the new how-se</a>, 8/16/99</h4>
+
+<h4><a href="family.html">Clare with the kids</a>, 9/99</h4>
+
+<h4><a href="October">New pictures</a>, 10/3/99, part 1</h4>
+
+<h4><a href="October/index2.html">New pictures</a>, 10/3/99, part 2</h4>
+
+<br clear=all>
+
+
+<hr>
+<h4>Pictures of Annie and Ethan, Early '99</h4>
+
+<img src="1b.jpg">
+<p>
+<img src="hillman.jpg">
+<p>
+<img src="00000008.jpg">
+
+
+<hr>
+</body>
+</html>
